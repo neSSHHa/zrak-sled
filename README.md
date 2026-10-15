@@ -8,6 +8,10 @@ Uporabnik se registrira prek Telegram bota s telefonsko številko in deli lokaci
 
 Izpolnjen obrazec z idejo: [docs/Obrazec.pdf](docs/Obrazec.pdf)
 
+## Naloge pri vajah
+
+- [Naloga 1: XML in JSON](naloga1-xml-json/README.md) – branje, povezovanje in filtriranje XML podatkov (postaje, meritve, lokacije), izvoz v JSON in XML
+
 ## Funkcionalnosti
 
 - registracija prek Telegrama s telefonsko številko

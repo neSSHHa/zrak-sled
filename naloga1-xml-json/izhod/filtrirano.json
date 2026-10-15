@@ -1,0 +1,312 @@
+{
+  "opis": "Izpostavljenost uporabnikov onesnaženemu zraku (zrak-sled)",
+  "enota": "µg/m³",
+  "filter": {
+    "od": "2026-10-13"
+  },
+  "steviloZapisov": 11,
+  "zapisi": [
+    {
+      "lokacijaId": "L07",
+      "datum": "2026-10-13",
+      "ura": 8,
+      "lat": 46.6625,
+      "lon": 16.1664,
+      "uporabnik": {
+        "id": "U05",
+        "ime": "Eva Vidmar",
+        "telegram": "@evav",
+        "mejaPm10": 45
+      },
+      "postaja": {
+        "id": "P05",
+        "ime": "Murska Sobota Rakičan",
+        "mesto": "Murska Sobota",
+        "oddaljenostKm": 2.28
+      },
+      "meritev": {
+        "id": "M07",
+        "pm10": 54,
+        "pm25": 39,
+        "no2": null,
+        "o3": 20
+      },
+      "nadMejo": true,
+      "stanje": "NAD MEJO"
+    },
+    {
+      "lokacijaId": "L05",
+      "datum": "2026-10-13",
+      "ura": 9,
+      "lat": 46.2309,
+      "lon": 15.2604,
+      "uporabnik": {
+        "id": "U03",
+        "ime": "Maja Horvat",
+        "telegram": null,
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P04",
+        "ime": "Celje bolnica",
+        "mesto": "Celje",
+        "oddaljenostKm": 0.93
+      },
+      "meritev": {
+        "id": "M05",
+        "pm10": 72,
+        "pm25": 55,
+        "no2": 39,
+        "o3": 10
+      },
+      "nadMejo": true,
+      "stanje": "NAD MEJO"
+    },
+    {
+      "lokacijaId": "L06",
+      "datum": "2026-10-13",
+      "ura": 12,
+      "lat": 45.5469,
+      "lon": 13.7294,
+      "uporabnik": {
+        "id": "U04",
+        "ime": "Jan Zupan",
+        "telegram": "@jan_z",
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P07",
+        "ime": "Koper",
+        "mesto": "Koper",
+        "oddaljenostKm": 0.13
+      },
+      "meritev": {
+        "id": "M06",
+        "pm10": 18,
+        "pm25": 9,
+        "no2": 14,
+        "o3": 71
+      },
+      "nadMejo": false,
+      "stanje": "v redu"
+    },
+    {
+      "lokacijaId": "L08",
+      "datum": "2026-10-13",
+      "ura": 15,
+      "lat": 45.9564,
+      "lon": 13.6481,
+      "uporabnik": {
+        "id": "U06",
+        "ime": "Nik Golob",
+        "telegram": null,
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P06",
+        "ime": "Nova Gorica",
+        "mesto": "Nova Gorica",
+        "oddaljenostKm": 0.05
+      },
+      "meritev": {
+        "id": "M08",
+        "pm10": 22,
+        "pm25": 14,
+        "no2": 19,
+        "o3": 64
+      },
+      "nadMejo": false,
+      "stanje": "v redu"
+    },
+    {
+      "lokacijaId": "L09",
+      "datum": "2026-10-14",
+      "ura": 7,
+      "lat": 46.2389,
+      "lon": 14.3556,
+      "uporabnik": {
+        "id": "U07",
+        "ime": "Sara Kos",
+        "telegram": "@sarakos",
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P08",
+        "ime": "Kranj",
+        "mesto": "Kranj",
+        "oddaljenostKm": 0.58
+      },
+      "meritev": {
+        "id": "M09",
+        "pm10": 33,
+        "pm25": 24,
+        "no2": 36,
+        "o3": null
+      },
+      "nadMejo": false,
+      "stanje": "v redu"
+    },
+    {
+      "lokacijaId": "L13",
+      "datum": "2026-10-14",
+      "ura": 8,
+      "lat": 46.5578,
+      "lon": 15.647,
+      "uporabnik": {
+        "id": "U02",
+        "ime": "Luka Kranjc",
+        "telegram": "@lukak",
+        "mejaPm10": 40
+      },
+      "postaja": {
+        "id": "P02",
+        "ime": "Maribor center",
+        "mesto": "Maribor",
+        "oddaljenostKm": 0.2
+      },
+      "meritev": {
+        "id": "M13",
+        "pm10": 49,
+        "pm25": 37,
+        "no2": 62,
+        "o3": 11
+      },
+      "nadMejo": true,
+      "stanje": "NAD MEJO"
+    },
+    {
+      "lokacijaId": "L10",
+      "datum": "2026-10-14",
+      "ura": 8,
+      "lat": 46.1547,
+      "lon": 15.0507,
+      "uporabnik": {
+        "id": "U08",
+        "ime": "Matej Mlakar",
+        "telegram": "@mmlakar",
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P09",
+        "ime": "Trbovlje",
+        "mesto": "Trbovlje",
+        "oddaljenostKm": 0.56
+      },
+      "meritev": {
+        "id": "M10",
+        "pm10": 81,
+        "pm25": 63,
+        "no2": 33,
+        "o3": 5
+      },
+      "nadMejo": true,
+      "stanje": "NAD MEJO"
+    },
+    {
+      "lokacijaId": "L11",
+      "datum": "2026-10-14",
+      "ura": 10,
+      "lat": 45.8011,
+      "lon": 15.1689,
+      "uporabnik": {
+        "id": "U09",
+        "ime": "Tina Potočnik",
+        "telegram": "@tina_p",
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P10",
+        "ime": "Novo mesto",
+        "mesto": "Novo mesto",
+        "oddaljenostKm": 0.23
+      },
+      "meritev": {
+        "id": "M11",
+        "pm10": 44,
+        "pm25": 31,
+        "no2": 25,
+        "o3": 27
+      },
+      "nadMejo": false,
+      "stanje": "v redu"
+    },
+    {
+      "lokacijaId": "L15",
+      "datum": "2026-10-14",
+      "ura": 13,
+      "lat": 45.565,
+      "lon": 14.86,
+      "uporabnik": {
+        "id": "U01",
+        "ime": "Ana Novak",
+        "telegram": "@ana_novak",
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P12",
+        "ime": "Iskrba",
+        "mesto": "Kočevska Reka",
+        "oddaljenostKm": 0.47
+      },
+      "meritev": null,
+      "nadMejo": false,
+      "stanje": "ni podatka"
+    },
+    {
+      "lokacijaId": "L14",
+      "datum": "2026-10-14",
+      "ura": 17,
+      "lat": 46.238,
+      "lon": 15.265,
+      "uporabnik": {
+        "id": "U03",
+        "ime": "Maja Horvat",
+        "telegram": null,
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P04",
+        "ime": "Celje bolnica",
+        "mesto": "Celje",
+        "oddaljenostKm": 0.44
+      },
+      "meritev": {
+        "id": "M14",
+        "pm10": 66,
+        "pm25": 50,
+        "no2": 44,
+        "o3": null
+      },
+      "nadMejo": true,
+      "stanje": "NAD MEJO"
+    },
+    {
+      "lokacijaId": "L12",
+      "datum": "2026-10-14",
+      "ura": 18,
+      "lat": 46.135,
+      "lon": 14.996,
+      "uporabnik": {
+        "id": "U10",
+        "ime": "Rok Kovačič",
+        "telegram": "@rokk",
+        "mejaPm10": 50
+      },
+      "postaja": {
+        "id": "P11",
+        "ime": "Zagorje",
+        "mesto": "Zagorje ob Savi",
+        "oddaljenostKm": 0.14
+      },
+      "meritev": {
+        "id": "M12",
+        "pm10": 58,
+        "pm25": 46,
+        "no2": 21,
+        "o3": 9
+      },
+      "nadMejo": true,
+      "stanje": "NAD MEJO"
+    }
+  ]
+}

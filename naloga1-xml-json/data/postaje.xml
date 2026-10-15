@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Merilna mesta ARSO za kakovost zraka (koordinate so približne). -->
+<postaje>
+  <postaja id="P01">
+    <ime>Ljubljana Bežigrad</ime>
+    <mesto>Ljubljana</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>46.0655</lat>
+    <lon>14.5124</lon>
+    <nadmorskaVisina>299</nadmorskaVisina>
+    <datumZacetkaMeritev>1997-01-01</datumZacetkaMeritev>
+    <opomba>glavna postaja v Ljubljani</opomba>
+  </postaja>
+  <postaja id="P02">
+    <ime>Maribor center</ime>
+    <mesto>Maribor</mesto>
+    <tip>promet</tip>
+    <lat>46.5590</lat>
+    <lon>15.6450</lon>
+    <nadmorskaVisina>270</nadmorskaVisina>
+    <datumZacetkaMeritev>2002-03-15</datumZacetkaMeritev>
+    <opomba></opomba>
+  </postaja>
+  <postaja id="P03">
+    <ime>Maribor Vrbanski plato</ime>
+    <mesto>Maribor</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>46.5680</lat>
+    <lon>15.6290</lon>
+    <nadmorskaVisina>279</nadmorskaVisina>
+    <datumZacetkaMeritev>2009-06-01</datumZacetkaMeritev>
+    <opomba></opomba>
+  </postaja>
+  <postaja id="P04">
+    <ime>Celje bolnica</ime>
+    <mesto>Celje</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>46.2360</lat>
+    <lon>15.2700</lon>
+    <nadmorskaVisina>240</nadmorskaVisina>
+    <datumZacetkaMeritev>2003-01-01</datumZacetkaMeritev>
+    <opomba>pozimi pogosto preseganja PM10</opomba>
+  </postaja>
+  <postaja id="P05">
+    <ime>Murska Sobota Rakičan</ime>
+    <mesto>Murska Sobota</mesto>
+    <tip>podeželsko ozadje</tip>
+    <lat>46.6520</lat>
+    <lon>16.1920</lon>
+    <nadmorskaVisina>188</nadmorskaVisina>
+    <datumZacetkaMeritev>2004-05-01</datumZacetkaMeritev>
+    <opomba></opomba>
+  </postaja>
+  <postaja id="P06">
+    <ime>Nova Gorica</ime>
+    <mesto>Nova Gorica</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>45.9560</lat>
+    <lon>13.6480</lon>
+    <nadmorskaVisina>113</nadmorskaVisina>
+    <datumZacetkaMeritev>2002-01-01</datumZacetkaMeritev>
+    <opomba></opomba>
+  </postaja>
+  <postaja id="P07">
+    <ime>Koper</ime>
+    <mesto>Koper</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>45.5480</lat>
+    <lon>13.7300</lon>
+    <nadmorskaVisina>56</nadmorskaVisina>
+    <datumZacetkaMeritev>2005-01-01</datumZacetkaMeritev>
+    <opomba>poleti visok ozon</opomba>
+  </postaja>
+  <postaja id="P08">
+    <ime>Kranj</ime>
+    <mesto>Kranj</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>46.2440</lat>
+    <lon>14.3540</lon>
+    <nadmorskaVisina>390</nadmorskaVisina>
+    <datumZacetkaMeritev>2008-01-01</datumZacetkaMeritev>
+    <opomba></opomba>
+  </postaja>
+  <postaja id="P09">
+    <ime>Trbovlje</ime>
+    <mesto>Trbovlje</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>46.1550</lat>
+    <lon>15.0580</lon>
+    <nadmorskaVisina>250</nadmorskaVisina>
+    <datumZacetkaMeritev>1998-01-01</datumZacetkaMeritev>
+    <opomba>zaprta dolina, slaba prevetrenost</opomba>
+  </postaja>
+  <postaja id="P10">
+    <ime>Novo mesto</ime>
+    <mesto>Novo mesto</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>45.8030</lat>
+    <lon>15.1700</lon>
+    <nadmorskaVisina>220</nadmorskaVisina>
+    <datumZacetkaMeritev>2007-01-01</datumZacetkaMeritev>
+    <opomba></opomba>
+  </postaja>
+  <postaja id="P11">
+    <ime>Zagorje</ime>
+    <mesto>Zagorje ob Savi</mesto>
+    <tip>mestno ozadje</tip>
+    <lat>46.1340</lat>
+    <lon>14.9970</lon>
+    <nadmorskaVisina>240</nadmorskaVisina>
+    <datumZacetkaMeritev>1999-01-01</datumZacetkaMeritev>
+    <opomba></opomba>
+  </postaja>
+  <!-- Pri tej postaji manjkata nadmorska višina in opomba (izpuščeni polji). -->
+  <postaja id="P12">
+    <ime>Iskrba</ime>
+    <mesto>Kočevska Reka</mesto>
+    <tip>podeželsko ozadje</tip>
+    <lat>45.5610</lat>
+    <lon>14.8580</lon>
+    <datumZacetkaMeritev>1996-01-01</datumZacetkaMeritev>
+  </postaja>
+</postaje>

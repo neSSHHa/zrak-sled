@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Urne meritve ARSO v µg/m³. Prazen element pomeni, da postaja tistega onesnaževala to uro ni izmerila. -->
+<meritve>
+  <meritev id="M01">
+    <postajaId>P01</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>8</ura>
+    <pm10>38</pm10>
+    <pm25>27</pm25>
+    <o3>12</o3>
+    <no2>41</no2>
+  </meritev>
+  <meritev id="M02">
+    <postajaId>P01</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>17</ura>
+    <pm10>56</pm10>
+    <pm25>41</pm25>
+    <o3></o3>
+    <no2>52</no2>
+  </meritev>
+  <meritev id="M03">
+    <postajaId>P02</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>7</ura>
+    <pm10>61</pm10>
+    <pm25>44</pm25>
+    <o3>8</o3>
+    <no2>58</no2>
+  </meritev>
+  <meritev id="M04">
+    <postajaId>P03</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>19</ura>
+    <pm10>47</pm10>
+    <pm25>35</pm25>
+    <o3>15</o3>
+    <no2>30</no2>
+  </meritev>
+  <meritev id="M05">
+    <postajaId>P04</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>9</ura>
+    <pm10>72</pm10>
+    <pm25>55</pm25>
+    <o3>10</o3>
+    <no2>39</no2>
+  </meritev>
+  <meritev id="M06">
+    <postajaId>P07</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>12</ura>
+    <pm10>18</pm10>
+    <pm25>9</pm25>
+    <o3>71</o3>
+    <no2>14</no2>
+  </meritev>
+  <meritev id="M07">
+    <postajaId>P05</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>8</ura>
+    <pm10>54</pm10>
+    <pm25>39</pm25>
+    <o3>20</o3>
+    <no2></no2>
+  </meritev>
+  <meritev id="M08">
+    <postajaId>P06</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>15</ura>
+    <pm10>22</pm10>
+    <pm25>14</pm25>
+    <o3>64</o3>
+    <no2>19</no2>
+  </meritev>
+  <meritev id="M09">
+    <postajaId>P08</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>7</ura>
+    <pm10>33</pm10>
+    <pm25>24</pm25>
+    <o3></o3>
+    <no2>36</no2>
+  </meritev>
+  <meritev id="M10">
+    <postajaId>P09</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>8</ura>
+    <pm10>81</pm10>
+    <pm25>63</pm25>
+    <o3>5</o3>
+    <no2>33</no2>
+  </meritev>
+  <meritev id="M11">
+    <postajaId>P10</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>10</ura>
+    <pm10>44</pm10>
+    <pm25>31</pm25>
+    <o3>27</o3>
+    <no2>25</no2>
+  </meritev>
+  <meritev id="M12">
+    <postajaId>P11</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>18</ura>
+    <pm10>58</pm10>
+    <pm25>46</pm25>
+    <o3>9</o3>
+    <no2>21</no2>
+  </meritev>
+  <meritev id="M13">
+    <postajaId>P02</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>8</ura>
+    <pm10>49</pm10>
+    <pm25>37</pm25>
+    <o3>11</o3>
+    <no2>62</no2>
+  </meritev>
+  <meritev id="M14">
+    <postajaId>P04</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>17</ura>
+    <pm10>66</pm10>
+    <pm25>50</pm25>
+    <o3></o3>
+    <no2>44</no2>
+  </meritev>
+  <meritev id="M15">
+    <postajaId>P12</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>12</ura>
+    <pm10>9</pm10>
+    <pm25>6</pm25>
+    <o3>58</o3>
+    <no2>3</no2>
+  </meritev>
+</meritve>

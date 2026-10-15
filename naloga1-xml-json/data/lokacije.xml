@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Točke poti, ki jih uporabniki pošljejo prek Telegrama (deljenje lokacije v živo).
+     postajaId je najbližja ARSO postaja, ura je zaokrožena na celo uro. -->
+<lokacije>
+  <lokacija id="L01">
+    <uporabnikId>U01</uporabnikId>
+    <postajaId>P01</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>8</ura>
+    <lat>46.0569</lat>
+    <lon>14.5058</lon>
+  </lokacija>
+  <lokacija id="L02">
+    <uporabnikId>U01</uporabnikId>
+    <postajaId>P01</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>17</ura>
+    <lat>46.0510</lat>
+    <lon>14.5030</lon>
+  </lokacija>
+  <lokacija id="L03">
+    <uporabnikId>U02</uporabnikId>
+    <postajaId>P02</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>7</ura>
+    <lat>46.5547</lat>
+    <lon>15.6459</lon>
+  </lokacija>
+  <lokacija id="L04">
+    <uporabnikId>U02</uporabnikId>
+    <postajaId>P03</postajaId>
+    <datum>2026-10-12</datum>
+    <ura>19</ura>
+    <lat>46.5700</lat>
+    <lon>15.6300</lon>
+  </lokacija>
+  <lokacija id="L05">
+    <uporabnikId>U03</uporabnikId>
+    <postajaId>P04</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>9</ura>
+    <lat>46.2309</lat>
+    <lon>15.2604</lon>
+  </lokacija>
+  <lokacija id="L06">
+    <uporabnikId>U04</uporabnikId>
+    <postajaId>P07</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>12</ura>
+    <lat>45.5469</lat>
+    <lon>13.7294</lon>
+  </lokacija>
+  <lokacija id="L07">
+    <uporabnikId>U05</uporabnikId>
+    <postajaId>P05</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>8</ura>
+    <lat>46.6625</lat>
+    <lon>16.1664</lon>
+  </lokacija>
+  <lokacija id="L08">
+    <uporabnikId>U06</uporabnikId>
+    <postajaId>P06</postajaId>
+    <datum>2026-10-13</datum>
+    <ura>15</ura>
+    <lat>45.9564</lat>
+    <lon>13.6481</lon>
+  </lokacija>
+  <lokacija id="L09">
+    <uporabnikId>U07</uporabnikId>
+    <postajaId>P08</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>7</ura>
+    <lat>46.2389</lat>
+    <lon>14.3556</lon>
+  </lokacija>
+  <lokacija id="L10">
+    <uporabnikId>U08</uporabnikId>
+    <postajaId>P09</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>8</ura>
+    <lat>46.1547</lat>
+    <lon>15.0507</lon>
+  </lokacija>
+  <lokacija id="L11">
+    <uporabnikId>U09</uporabnikId>
+    <postajaId>P10</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>10</ura>
+    <lat>45.8011</lat>
+    <lon>15.1689</lon>
+  </lokacija>
+  <lokacija id="L12">
+    <uporabnikId>U10</uporabnikId>
+    <postajaId>P11</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>18</ura>
+    <lat>46.1350</lat>
+    <lon>14.9960</lon>
+  </lokacija>
+  <lokacija id="L13">
+    <uporabnikId>U02</uporabnikId>
+    <postajaId>P02</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>8</ura>
+    <lat>46.5578</lat>
+    <lon>15.6470</lon>
+  </lokacija>
+  <lokacija id="L14">
+    <uporabnikId>U03</uporabnikId>
+    <postajaId>P04</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>17</ura>
+    <lat>46.2380</lat>
+    <lon>15.2650</lon>
+  </lokacija>
+  <!-- Za to uro postaja P12 nima meritve, zato bo zapis brez vrednosti zraka. -->
+  <lokacija id="L15">
+    <uporabnikId>U01</uporabnikId>
+    <postajaId>P12</postajaId>
+    <datum>2026-10-14</datum>
+    <ura>13</ura>
+    <lat>45.5650</lat>
+    <lon>14.8600</lon>
+  </lokacija>
+</lokacije>
