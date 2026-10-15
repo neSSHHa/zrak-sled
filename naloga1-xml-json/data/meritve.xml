@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Urne meritve ARSO v µg/m³. Prazen element pomeni, da postaja tistega onesnaževala to uro ni izmerila. -->
 <meritve>
   <meritev id="M01">
     <postajaId>P01</postajaId>

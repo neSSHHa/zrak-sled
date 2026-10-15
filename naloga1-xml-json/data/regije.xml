@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regije>
+  <regija id="R01">
+    <ime>Pomurska</ime>
+    <sedez>Murska Sobota</sedez>
+    <povrsinaKm2>1337</povrsinaKm2>
+  </regija>
+  <regija id="R02">
+    <ime>Podravska</ime>
+    <sedez>Maribor</sedez>
+    <povrsinaKm2>2170</povrsinaKm2>
+  </regija>
+  <regija id="R03">
+    <ime>Koroška</ime>
+    <sedez>Slovenj Gradec</sedez>
+    <povrsinaKm2>1041</povrsinaKm2>
+  </regija>
+  <regija id="R04">
+    <ime>Savinjska</ime>
+    <sedez>Celje</sedez>
+    <povrsinaKm2>2301</povrsinaKm2>
+  </regija>
+  <regija id="R05">
+    <ime>Zasavska</ime>
+    <sedez>Trbovlje</sedez>
+    <povrsinaKm2>485</povrsinaKm2>
+  </regija>
+  <regija id="R06">
+    <ime>Posavska</ime>
+    <sedez>Krško</sedez>
+    <povrsinaKm2>968</povrsinaKm2>
+  </regija>
+  <regija id="R07">
+    <ime>Jugovzhodna Slovenija</ime>
+    <sedez>Novo mesto</sedez>
+    <povrsinaKm2>2675</povrsinaKm2>
+  </regija>
+  <regija id="R08">
+    <ime>Osrednjeslovenska</ime>
+    <sedez>Ljubljana</sedez>
+    <povrsinaKm2>2334</povrsinaKm2>
+  </regija>
+  <regija id="R09">
+    <ime>Gorenjska</ime>
+    <sedez>Kranj</sedez>
+    <povrsinaKm2>2137</povrsinaKm2>
+  </regija>
+  <regija id="R10">
+    <ime>Primorsko-notranjska</ime>
+    <sedez>Postojna</sedez>
+    <povrsinaKm2>1456</povrsinaKm2>
+  </regija>
+  <regija id="R11">
+    <ime>Goriška</ime>
+    <sedez>Nova Gorica</sedez>
+    <povrsinaKm2>2325</povrsinaKm2>
+  </regija>
+  <regija id="R12">
+    <ime>Obalno-kraška</ime>
+    <sedez>Koper</sedez>
+    <povrsinaKm2>1044</povrsinaKm2>
+  </regija>
+</regije>

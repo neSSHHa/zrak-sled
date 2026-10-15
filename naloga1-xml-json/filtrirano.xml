@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meritve>
+  <meritev id="M03">
+    <datum>2026-10-12</datum>
+    <ura>7</ura>
+    <postaja>Maribor center</postaja>
+    <mesto>Maribor</mesto>
+    <regija>Podravska</regija>
+    <pm10>61</pm10>
+    <pm25>44</pm25>
+    <o3>8</o3>
+    <no2>58</no2>
+  </meritev>
+  <meritev id="M02">
+    <datum>2026-10-12</datum>
+    <ura>17</ura>
+    <postaja>Ljubljana Bežigrad</postaja>
+    <mesto>Ljubljana</mesto>
+    <regija>Osrednjeslovenska</regija>
+    <pm10>56</pm10>
+    <pm25>41</pm25>
+    <o3></o3>
+    <no2>52</no2>
+  </meritev>
+  <meritev id="M07">
+    <datum>2026-10-13</datum>
+    <ura>8</ura>
+    <postaja>Murska Sobota Rakičan</postaja>
+    <mesto>Murska Sobota</mesto>
+    <regija>Pomurska</regija>
+    <pm10>54</pm10>
+    <pm25>39</pm25>
+    <o3>20</o3>
+    <no2></no2>
+  </meritev>
+  <meritev id="M05">
+    <datum>2026-10-13</datum>
+    <ura>9</ura>
+    <postaja>Celje bolnica</postaja>
+    <mesto>Celje</mesto>
+    <regija>Savinjska</regija>
+    <pm10>72</pm10>
+    <pm25>55</pm25>
+    <o3>10</o3>
+    <no2>39</no2>
+  </meritev>
+  <meritev id="M10">
+    <datum>2026-10-14</datum>
+    <ura>8</ura>
+    <postaja>Trbovlje</postaja>
+    <mesto>Trbovlje</mesto>
+    <regija>Zasavska</regija>
+    <pm10>81</pm10>
+    <pm25>63</pm25>
+    <o3>5</o3>
+    <no2>33</no2>
+  </meritev>
+  <meritev id="M14">
+    <datum>2026-10-14</datum>
+    <ura>17</ura>
+    <postaja>Celje bolnica</postaja>
+    <mesto>Celje</mesto>
+    <regija>Savinjska</regija>
+    <pm10>66</pm10>
+    <pm25>50</pm25>
+    <o3></o3>
+    <no2>44</no2>
+  </meritev>
+  <meritev id="M12">
+    <datum>2026-10-14</datum>
+    <ura>18</ura>
+    <postaja>Zagorje</postaja>
+    <mesto>Zagorje ob Savi</mesto>
+    <regija>Zasavska</regija>
+    <pm10>58</pm10>
+    <pm25>46</pm25>
+    <o3>9</o3>
+    <no2>21</no2>
+  </meritev>
+</meritve>

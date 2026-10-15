@@ -1,0 +1,86 @@
+[
+  {
+    "id": "M03",
+    "datum": "2026-10-12",
+    "ura": 7,
+    "postaja": "Maribor center",
+    "mesto": "Maribor",
+    "regija": "Podravska",
+    "pm10": 61,
+    "pm25": 44,
+    "o3": 8,
+    "no2": 58
+  },
+  {
+    "id": "M02",
+    "datum": "2026-10-12",
+    "ura": 17,
+    "postaja": "Ljubljana Bežigrad",
+    "mesto": "Ljubljana",
+    "regija": "Osrednjeslovenska",
+    "pm10": 56,
+    "pm25": 41,
+    "o3": null,
+    "no2": 52
+  },
+  {
+    "id": "M07",
+    "datum": "2026-10-13",
+    "ura": 8,
+    "postaja": "Murska Sobota Rakičan",
+    "mesto": "Murska Sobota",
+    "regija": "Pomurska",
+    "pm10": 54,
+    "pm25": 39,
+    "o3": 20,
+    "no2": null
+  },
+  {
+    "id": "M05",
+    "datum": "2026-10-13",
+    "ura": 9,
+    "postaja": "Celje bolnica",
+    "mesto": "Celje",
+    "regija": "Savinjska",
+    "pm10": 72,
+    "pm25": 55,
+    "o3": 10,
+    "no2": 39
+  },
+  {
+    "id": "M10",
+    "datum": "2026-10-14",
+    "ura": 8,
+    "postaja": "Trbovlje",
+    "mesto": "Trbovlje",
+    "regija": "Zasavska",
+    "pm10": 81,
+    "pm25": 63,
+    "o3": 5,
+    "no2": 33
+  },
+  {
+    "id": "M14",
+    "datum": "2026-10-14",
+    "ura": 17,
+    "postaja": "Celje bolnica",
+    "mesto": "Celje",
+    "regija": "Savinjska",
+    "pm10": 66,
+    "pm25": 50,
+    "o3": null,
+    "no2": 44
+  },
+  {
+    "id": "M12",
+    "datum": "2026-10-14",
+    "ura": 18,
+    "postaja": "Zagorje",
+    "mesto": "Zagorje ob Savi",
+    "regija": "Zasavska",
+    "pm10": 58,
+    "pm25": 46,
+    "o3": 9,
+    "no2": 21
+  }
+]
