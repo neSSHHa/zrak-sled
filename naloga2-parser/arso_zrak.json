@@ -1,0 +1,270 @@
+{
+  "Vir": "https://www.arso.gov.si/zrak/kakovost%20zraka/podatki/dnevne_koncentracije.html",
+  "Datum": "Petek, 23. oktobra 2026, med 17:00 in 18:00",
+  "Meritve": [
+    {
+      "Postaja": "LJ Bežigrad",
+      "Pm10": 16,
+      "Pm25": 9,
+      "So2": null,
+      "Co": null,
+      "O3": 11,
+      "No2": 34,
+      "Nox": 47,
+      "Benzen": 0.5
+    },
+    {
+      "Postaja": "LJ Celovška",
+      "Pm10": 14,
+      "Pm25": 7,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "LJ Vič",
+      "Pm10": 8,
+      "Pm25": 5,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Brezje pri Grosupljem",
+      "Pm10": 10,
+      "Pm25": 5,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Kranj",
+      "Pm10": 8,
+      "Pm25": 5,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "MB Titova",
+      "Pm10": 9,
+      "Pm25": 6,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": 16,
+      "Nox": 25,
+      "Benzen": 0.8
+    },
+    {
+      "Postaja": "MB Vrbanski",
+      "Pm10": 9,
+      "Pm25": 6,
+      "So2": null,
+      "Co": null,
+      "O3": 38,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "CE bolnica",
+      "Pm10": 13,
+      "Pm25": 8,
+      "So2": 5,
+      "Co": null,
+      "O3": null,
+      "No2": 20,
+      "Nox": 26,
+      "Benzen": null
+    },
+    {
+      "Postaja": "CE Ljubljanska",
+      "Pm10": 13,
+      "Pm25": 8,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Ptuj",
+      "Pm10": 8,
+      "Pm25": 6,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "MS Rakičan",
+      "Pm10": 9,
+      "Pm25": 6,
+      "So2": null,
+      "Co": null,
+      "O3": 58,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "MS Cankarjeva",
+      "Pm10": 12,
+      "Pm25": 7,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "IB Gregorčičeva",
+      "Pm10": 9,
+      "Pm25": 3,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "NG Grčna",
+      "Pm10": 7,
+      "Pm25": 3,
+      "So2": null,
+      "Co": null,
+      "O3": 16,
+      "No2": 46,
+      "Nox": 101,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Otlica",
+      "Pm10": null,
+      "Pm25": null,
+      "So2": null,
+      "Co": null,
+      "O3": 73,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Koper",
+      "Pm10": 3,
+      "Pm25": 2,
+      "So2": null,
+      "Co": null,
+      "O3": 51,
+      "No2": 25,
+      "Nox": 27,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Trbovlje",
+      "Pm10": 5,
+      "Pm25": 3,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Zagorje",
+      "Pm10": 12,
+      "Pm25": 7,
+      "So2": 3,
+      "Co": null,
+      "O3": 19,
+      "No2": 17,
+      "Nox": 31,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Hrastnik",
+      "Pm10": 7,
+      "Pm25": 3,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Novo mesto",
+      "Pm10": 9,
+      "Pm25": 6,
+      "So2": null,
+      "Co": null,
+      "O3": 33,
+      "No2": 7,
+      "Nox": 7,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Črna na Koroškem",
+      "Pm10": 12,
+      "Pm25": 6,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Črnomelj Loka",
+      "Pm10": null,
+      "Pm25": null,
+      "So2": null,
+      "Co": null,
+      "O3": null,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    },
+    {
+      "Postaja": "Iskrba",
+      "Pm10": 6,
+      "Pm25": 2,
+      "So2": 3,
+      "Co": null,
+      "O3": 35,
+      "No2": 1,
+      "Nox": null,
+      "Benzen": 0.2
+    },
+    {
+      "Postaja": "Krvavec",
+      "Pm10": null,
+      "Pm25": null,
+      "So2": null,
+      "Co": null,
+      "O3": 70,
+      "No2": null,
+      "Nox": null,
+      "Benzen": null
+    }
+  ]
+}

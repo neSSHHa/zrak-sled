@@ -11,6 +11,7 @@ Izpolnjen obrazec z idejo: [docs/Obrazec.pdf](docs/Obrazec.pdf)
 ## Naloge pri vajah
 
 - [Naloga 1: XML in JSON](naloga1-xml-json/README.md) – branje, povezovanje in filtriranje XML podatkov (postaje, meritve, lokacije), izvoz v JSON in XML
+- [Naloga 2: Parser](naloga2-parser/README.md) – Puppeteer Sharp razčlenjevalnik ARSO strani z urnimi meritvami zraka po postajah, izvoz v JSON
 
 ## Funkcionalnosti
 
