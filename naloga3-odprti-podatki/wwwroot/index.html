@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <title>zrak-sled · Viri onesnaženja</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 30px auto; padding: 0 16px; }
+    .graf { height: 320px; margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <h1>Od kod prihaja onesnažen zrak?</h1>
+  <p>Izpusti v Sloveniji, vir: Statistični urad RS (tabela 2719901S, PC-Axis)</p>
+
+  <label>Onesnaževalo:
+    <select id="izbira">
+      <option>PM10</option><option>PM2,5</option><option>NOx</option>
+      <option>SOx</option><option>NH3</option><option>NMVOC</option><option>CO</option>
+    </select>
+  </label>
+
+  <h2>Skupni izpusti po letih [t]</h2>
+  <div class="graf"><canvas id="grafLeta"></canvas></div>
+
+  <h2 id="naslovViri">Največji viri [t]</h2>
+  <div class="graf"><canvas id="grafViri"></canvas></div>
+
+<script>
+  let grafLeta, grafViri;
+
+  async function nalozi() {
+    const izbrano = document.getElementById("izbira").value;
+    const d = await fetch("/api/emisije?onesnazevalo=" + encodeURIComponent(izbrano)).then(r => r.json());
+
+    grafLeta?.destroy();
+    grafLeta = new Chart(document.getElementById("grafLeta"), {
+      type: "line",
+      data: { labels: d.poLetih.map(x => x.leto), datasets: [{ label: d.onesnazevalo, data: d.poLetih.map(x => x.tone) }] },
+      options: { maintainAspectRatio: false }
+    });
+
+    document.getElementById("naslovViri").textContent = `Največji viri v letu ${d.zadnjeLeto} [t]`;
+    grafViri?.destroy();
+    grafViri = new Chart(document.getElementById("grafViri"), {
+      type: "bar",
+      data: { labels: d.najvecjiViri.map(x => x.vir), datasets: [{ label: d.onesnazevalo, data: d.najvecjiViri.map(x => x.tone) }] },
+      options: { indexAxis: "y", maintainAspectRatio: false }
+    });
+  }
+
+  document.getElementById("izbira").addEventListener("change", nalozi);
+  nalozi();
+</script>
+</body>
+</html>
