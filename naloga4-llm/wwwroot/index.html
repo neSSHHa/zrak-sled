@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <title>zrak-sled · AI nasvet za aktivnost</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 30px auto; padding: 0 16px; }
+    label { display: block; margin-bottom: 10px; }
+    select, input, button { font-size: 16px; padding: 4px 8px; }
+    .rezultat { border: 1px solid #ccc; border-radius: 8px; padding: 16px; margin-top: 20px; }
+    .nizko { color: green; } .srednje { color: orange; } .visoko { color: red; }
+    pre { white-space: pre-wrap; background: #f4f4f4; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Ali je zrak primeren za mojo aktivnost?</h1>
+  <p>Izberi postajo, aktivnost in uro. Aplikacija vzame trenutne meritve z ARSO in vpraša Gemini za nasvet.</p>
+
+  <label>Merilna postaja:
+    <select id="postaja"></select>
+  </label>
+
+  <label>Aktivnost:
+    <select id="aktivnost">
+      <option>tek</option>
+      <option>kolesarjenje</option>
+      <option>sprehod</option>
+      <option>sprehod z otrokom</option>
+      <option>sprehod s psom</option>
+      <option>vadba na prostem</option>
+    </select>
+  </label>
+
+  <label>Ura:
+    <input type="time" id="ura">
+  </label>
+
+  <button id="gumb">Vprašaj AI</button>
+
+  <div id="rezultat"></div>
+
+<script>
+  // privzeto vpišemo trenutni čas iz brskalnika
+  const zdaj = new Date();
+  document.getElementById("ura").value =
+    String(zdaj.getHours()).padStart(2, "0") + ":" + String(zdaj.getMinutes()).padStart(2, "0");
+
+  // napolnimo dropdown s postajami z ARSO
+  async function naloziPostaje() {
+    const postaje = await fetch("/api/postaje").then(r => r.json());
+    const izbira = document.getElementById("postaja");
+    for (const p of postaje) {
+      const option = document.createElement("option");
+      option.textContent = p;
+      izbira.appendChild(option);
+    }
+  }
+
+  async function vprasaj() {
+    const postaja = document.getElementById("postaja").value;
+    const aktivnost = document.getElementById("aktivnost").value;
+    const ura = document.getElementById("ura").value;
+    const div = document.getElementById("rezultat");
+    div.innerHTML = "<p>Čakam na odgovor ...</p>";
+
+    const url = "/api/nasvet?postaja=" + encodeURIComponent(postaja)
+      + "&aktivnost=" + encodeURIComponent(aktivnost)
+      + "&ura=" + encodeURIComponent(ura);
+    const odgovor = await fetch(url);
+    if (!odgovor.ok) {
+      div.innerHTML = "<p>Napaka: " + await odgovor.text() + "</p>";
+      return;
+    }
+    const d = await odgovor.json();
+    const n = d.nasvet;
+
+    // prikažemo posamezna polja iz JSON
+    div.innerHTML = `
+      <div class="rezultat">
+        <h2>${n.priporoceno ? "✅ Priporočeno" : "❌ Ni priporočeno"}</h2>
+        <p>Tveganje: <b class="${n.tveganje}">${n.tveganje}</b></p>
+        <p>${n.razlog}</p>
+        ${n.boljsiCas ? `<p><b>Boljši čas:</b> ${n.boljsiCas}</p>` : ""}
+        <ul>${n.nasveti.map(x => `<li>${x}</li>`).join("")}</ul>
+        <p><small>Meritve ${d.meritev.postaja} (${d.meritev.cas}): PM10 ${d.meritev.pm10 ?? "-"}, PM2,5 ${d.meritev.pm25 ?? "-"}, NO2 ${d.meritev.no2 ?? "-"}, O3 ${d.meritev.o3 ?? "-"} µg/m³</small></p>
+      </div>
+      <details>
+        <summary>Prompt, ki je bil poslan modelu</summary>
+        <pre>${d.prompt}</pre>
+      </details>`;
+  }
+
+  document.getElementById("gumb").addEventListener("click", vprasaj);
+  naloziPostaje();
+</script>
+</body>
+</html>

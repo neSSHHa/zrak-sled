@@ -13,6 +13,7 @@ Izpolnjen obrazec z idejo: [docs/Obrazec.pdf](docs/Obrazec.pdf)
 - [Naloga 1: XML in JSON](naloga1-xml-json/README.md) – branje, povezovanje in filtriranje XML podatkov (postaje, meritve, lokacije), izvoz v JSON in XML
 - [Naloga 2: Parser](naloga2-parser/README.md) – Puppeteer Sharp razčlenjevalnik ARSO strani z urnimi meritvami zraka po postajah, izvoz v JSON
 - [Naloga 3: Odprti podatki](naloga3-odprti-podatki/README.md) – izpusti onesnaževal v zrak po virih iz SURS (PC-Axis), razčlenjevanje, agregacija in grafi s Chart.js
+- [Naloga 4: Uporaba LLM](naloga4-llm/README.md) – dinamičen prompt iz izbrane postaje, aktivnosti in ure z ARSO meritvami, Gemini vrne JSON, ki se prebere v razred `Nasvet`
 
 ## Funkcionalnosti
 
