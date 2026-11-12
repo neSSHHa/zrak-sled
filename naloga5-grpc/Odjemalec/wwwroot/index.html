@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <title>zrak-sled · gRPC</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 750px; margin: 30px auto; padding: 0 16px; }
+    section { border: 1px solid #ccc; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+    select, input, button { font-size: 15px; padding: 3px 6px; }
+    table { border-collapse: collapse; margin-top: 10px; width: 100%; }
+    td, th { border: 1px solid #ddd; padding: 4px 8px; text-align: left; }
+  </style>
+</head>
+<body>
+  <h1>Kakovost zraka prek gRPC</h1>
+  <p>Podatki pridejo z ARSO prek gRPC strežnika.</p>
+
+  <section>
+    <h2>Meritev postaje</h2>
+    <select id="postaja"></select>
+    <button onclick="meritev()">Prikaži</button>
+    <div id="meritev"></div>
+  </section>
+
+  <section>
+    <h2>Najbolj onesnažene postaje</h2>
+    <select id="onesnazevalo">
+      <option value="pm10">PM10</option>
+      <option value="pm25">PM2,5</option>
+      <option value="no2">NO2</option>
+      <option value="o3">O3</option>
+    </select>
+    Število: <input type="number" id="stevilo" value="5" min="1" style="width:60px">
+    <button onclick="najslabse()">Prikaži</button>
+    <div id="najslabse"></div>
+  </section>
+
+  <section>
+    <h2>Spremljanje v živo (stream)</h2>
+    Postaja iz zgornjega seznama, interval:
+    <input type="number" id="interval" value="5" min="2" style="width:60px"> s
+    <button onclick="zacni()">Začni</button>
+    <button onclick="ustavi()">Ustavi</button>
+    <p id="stanje"></p>
+    <div id="tok"></div>
+  </section>
+
+<script>
+  let tok = null;
+  let vrsticeToka = [];
+
+  function v(x) { return x < 0 ? "–" : x; }
+
+  function tabela(meritve) {
+    let html = "<table><tr><th>Postaja</th><th>Čas</th><th>PM10</th><th>PM2,5</th><th>NO2</th><th>O3</th><th>Prebrano</th></tr>";
+    for (const m of meritve) {
+      html += `<tr><td>${m.postaja}</td><td>${m.cas}</td><td>${v(m.pm10)}</td><td>${v(m.pm25)}</td>`
+            + `<td>${v(m.no2)}</td><td>${v(m.o3)}</td><td>${m.prebrano}</td></tr>`;
+    }
+    return html + "</table>";
+  }
+
+  async function naloziPostaje() {
+    const postaje = await fetch("/api/postaje").then(r => r.json());
+    const izbira = document.getElementById("postaja");
+    for (const p of postaje) {
+      const option = document.createElement("option");
+      option.textContent = p;
+      izbira.appendChild(option);
+    }
+  }
+
+  async function meritev() {
+    const postaja = document.getElementById("postaja").value;
+    const odgovor = await fetch("/api/meritev?postaja=" + encodeURIComponent(postaja));
+    if (!odgovor.ok) {
+      document.getElementById("meritev").innerHTML = "<p>Napaka pri klicu.</p>";
+      return;
+    }
+    const m = await odgovor.json();
+    document.getElementById("meritev").innerHTML = tabela([m]);
+  }
+
+  async function najslabse() {
+    const o = document.getElementById("onesnazevalo").value;
+    const n = document.getElementById("stevilo").value;
+    const meritve = await fetch("/api/najslabse?onesnazevalo=" + o + "&stevilo=" + n).then(r => r.json());
+    document.getElementById("najslabse").innerHTML = tabela(meritve);
+  }
+
+  function zacni() {
+    ustavi();
+    vrsticeToka = [];
+    const postaja = document.getElementById("postaja").value;
+    const interval = document.getElementById("interval").value;
+    document.getElementById("stanje").textContent = "Spremljam " + postaja + " ...";
+
+    // EventSource prejme vsako sporočilo, ki ga strežnik pošlje v gRPC toku
+    tok = new EventSource("/api/spremljaj?postaja=" + encodeURIComponent(postaja) + "&interval=" + interval);
+    tok.onmessage = (e) => {
+      vrsticeToka.unshift(JSON.parse(e.data)); // najnovejša na vrhu
+      document.getElementById("tok").innerHTML = tabela(vrsticeToka);
+    };
+  }
+
+  function ustavi() {
+    if (tok) {
+      tok.close();
+      tok = null;
+      document.getElementById("stanje").textContent = "Ustavljeno.";
+    }
+  }
+
+  naloziPostaje();
+</script>
+</body>
+</html>

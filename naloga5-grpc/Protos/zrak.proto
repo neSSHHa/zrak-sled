@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+option csharp_namespace = "ZrakGrpc";
+
+package zrak;
+
+// Meritev ene ARSO postaje, vrednosti v µg/m³ (-1 = ni podatka)
+message Meritev {
+  string postaja = 1;
+  string cas = 2;       // do kdaj velja meritev (z ARSO)
+  double pm10 = 3;
+  double pm25 = 4;
+  double no2 = 5;
+  double o3 = 6;
+  string prebrano = 7;  // kdaj je strežnik prebral podatke
+}
+
+message PrazenZahtevek {}
+
+message PostajeOdgovor {
+  repeated string postaje = 1;
+}
+
+message PostajaZahtevek {
+  string postaja = 1;
+}
+
+message MeritevOdgovor {
+  Meritev meritev = 1;
+}
+
+message NajslabseZahtevek {
+  string onesnazevalo = 1; // pm10, pm25, no2 ali o3
+  int32 stevilo = 2;       // koliko postaj vrne
+}
+
+message MeritveOdgovor {
+  repeated Meritev meritve = 1;
+}
+
+message SpremljanjeZahtevek {
+  string postaja = 1;
+  int32 interval_sekund = 2;
+}
+
+service ZrakStoritev {
+  // seznam vseh ARSO postaj
+  rpc SeznamPostaj (PrazenZahtevek) returns (PostajeOdgovor);
+  // zadnja meritev izbrane postaje
+  rpc MeritevPostaje (PostajaZahtevek) returns (MeritevOdgovor);
+  // postaje z najvišjo vrednostjo izbranega onesnaževala
+  rpc NajslabsePostaje (NajslabseZahtevek) returns (MeritveOdgovor);
+  // server-side streaming: strežnik pošilja meritev postaje na vsakih N sekund
+  rpc SpremljajPostajo (SpremljanjeZahtevek) returns (stream Meritev);
+}

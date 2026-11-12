@@ -14,6 +14,7 @@ Izpolnjen obrazec z idejo: [docs/Obrazec.pdf](docs/Obrazec.pdf)
 - [Naloga 2: Parser](naloga2-parser/README.md) – Puppeteer Sharp razčlenjevalnik ARSO strani z urnimi meritvami zraka po postajah, izvoz v JSON
 - [Naloga 3: Odprti podatki](naloga3-odprti-podatki/README.md) – izpusti onesnaževal v zrak po virih iz SURS (PC-Axis), razčlenjevanje, agregacija in grafi s Chart.js
 - [Naloga 4: Uporaba LLM](naloga4-llm/README.md) – dinamičen prompt iz izbrane postaje, aktivnosti in ure z ARSO meritvami, Gemini vrne JSON, ki se prebere v razred `Nasvet`
+- [Naloga 5: gRPC](naloga5-grpc/README.md) – gRPC strežnik z ARSO meritvami (4 RPC klici, eden server-side streaming) in spletna aplikacija kot odjemalec s prikazom v živo
 
 ## Funkcionalnosti
 
